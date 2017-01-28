@@ -1,0 +1,3 @@
+[submodule "GumNTape_Build"]
+	path = UNCC_ZJW/GumNTape_Build
+	url = https://github.com/ZacharyWartell/GumNTape_Build.git
