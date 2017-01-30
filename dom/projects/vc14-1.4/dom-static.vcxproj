@@ -30,6 +30,7 @@
     <ProjectGuid>{2BAD5C91-F2B8-4E96-94DA-F6D6822DF29F}</ProjectGuid>
     <RootNamespace>domstatic</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -92,18 +93,18 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\build\vc10-1.4-d\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\build\vc10-1.4-d\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">..\..\build\vc10-1.4-d\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">..\..\build\vc10-1.4-d\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\build\vc10-1.4-d\obj\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\build\vc10-1.4-d\obj\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">..\..\build\vc10-1.4-d\obj\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">..\..\build\vc10-1.4-d\obj\$(ProjectName)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\build\vc10-1.4\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\build\vc10-1.4\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\build\vc10-1.4\obj\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\build\vc10-1.4\obj\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\build\vc14-1.4-d\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\build\vc14-1.4-d\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">..\..\build\vc14-1.4-d\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">..\..\build\vc14-1.4-d\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\build\vc14-1.4-d\obj\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\build\vc14-1.4-d\obj\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">..\..\build\vc14-1.4-d\obj\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">..\..\build\vc14-1.4-d\obj\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\build\vc14-1.4\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\build\vc14-1.4\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\build\vc14-1.4\obj\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\build\vc14-1.4\obj\$(ProjectName)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libcollada14dom22-sd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libcollada14dom22-sd</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">libcollada14dom22-sd</TargetName>
