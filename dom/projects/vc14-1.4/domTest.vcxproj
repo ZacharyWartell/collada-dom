@@ -202,7 +202,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcollada14dom22-d.lib;boost_filesystem-vc100-mt-gd-1_63.lib;boost_system-vc100-mt-gd-1_63.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcollada14dom22-d.lib;boost_\1-\$(BOOST_MSVC_STR)-mt-gd-1_63.lib;boost_\1-\$(BOOST_MSVC_STR)-mt-gd-1_63.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir);..\..\external-libs\boost\lib\vc10;C:\Users\MichaelWojcik\Documents\Programming\Collada\collada-dom\dom\build\vc10-1.4-d;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
