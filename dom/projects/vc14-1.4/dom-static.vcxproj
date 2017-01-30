@@ -165,6 +165,9 @@
     <Lib>
       <OutputFile>$(OutDir)libcollada14dom22-sd.lib</OutputFile>
     </Lib>
+    <PostBuildEvent>
+      <Command>..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\quasi_install.bat $(Platform) $(Configuration) $(TargetName) $(TargetDir) $(PlatformToolSet) collada-dom2.2 ..\..\include</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">
     <ClCompile>
@@ -183,6 +186,9 @@
     <Lib>
       <OutputFile>$(OutDir)libcollada14dom22-sd.lib</OutputFile>
     </Lib>
+    <PostBuildEvent>
+      <Command>..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\quasi_install.bat $(Platform) $(Configuration) $(TargetName) $(TargetDir) $(PlatformToolSet) collada-dom2.2 ..\..\include</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

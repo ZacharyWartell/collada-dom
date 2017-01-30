@@ -246,7 +246,8 @@
       <Command>..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\quasi_install.bat $(Platform) $(Configuration) $(TargetName) $(TargetDir) $(PlatformToolSet) collada-dom2.2 ..\..\include</Command>
     </PostBuildEvent>
     <PreLinkEvent>
-      <Command>echo BOOST_INC_DIR $(BOOST_INC_DIR) &amp; dir $(BOOST_INC_DIR)</Command>
+      <Command>
+      </Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
