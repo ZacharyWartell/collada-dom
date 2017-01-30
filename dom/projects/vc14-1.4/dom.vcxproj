@@ -215,7 +215,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;$(LIBXML2_INC_DIR);$(TINYXML_INC_DIR);$(PCRE_INC_DIR);$(MINIZIP_INC_DIR);$(BOOST_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;$(LIBXML2_INC_DIR);$(TINYXML_INC_DIR);$(PCRE_INC_DIR);$(MINIZIP_INC_DIR);$(boost_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableLanguageExtensions>true</DisableLanguageExtensions>
@@ -229,7 +229,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;zlibd.lib;wsock32.lib;pcred.lib;pcrecppd.lib;minizipd.lib;boost_filesystem-vc100-mt-gd-1_63.lib;boost_system-vc100-mt-gd-1_63.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2.lib;zlibd.lib;wsock32.lib;pcred.lib;pcrecppd.lib;minizipd.lib;boost_filesystem-$(BOOST_MSVC_STR)-mt-gd-1_63.lib;boost_system-$(BOOST_MSVC_STR)-mt-gd-1_63.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
