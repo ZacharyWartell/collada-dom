@@ -181,7 +181,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;$(LIBXML2_INC_DIR);$(TINYXML_INC_DIR);$(PCRE_INC_DIR);$(MINIZIP_INC_DIR);$(BOOST_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableLanguageExtensions>true</DisableLanguageExtensions>
@@ -215,7 +215,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;$(LIBXML2_INC_DIR);$(TINYXML_INC_DIR);$(PCRE_INC_DIR);$(MINIZIP_INC_DIR);$(boost_INC_DIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableLanguageExtensions>true</DisableLanguageExtensions>
@@ -245,6 +245,9 @@
     <PostBuildEvent>
       <Command>..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\quasi_install.bat $(Platform) $(Configuration) $(TargetName) $(TargetDir) $(PlatformToolSet) collada-dom2.2 ..\..\include</Command>
     </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>echo BOOST_INC_DIR $(BOOST_INC_DIR) &amp; dir $(BOOST_INC_DIR)</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
