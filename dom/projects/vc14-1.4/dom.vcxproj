@@ -17,6 +17,14 @@
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_UNCC_ZJW|Win32">
+      <Configuration>Release_UNCC_ZJW</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_UNCC_ZJW|x64">
+      <Configuration>Release_UNCC_ZJW</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
@@ -60,10 +68,22 @@
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -85,7 +105,17 @@
     <Import Project="..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\msvs_version-2015.props" />
     <Import Project="..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\collada-dom external imports.props" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\msvs_version-2015.props" />
+    <Import Project="..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\collada-dom external imports.props" />
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\msvs_version-2015.props" />
+    <Import Project="..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\collada-dom external imports.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\msvs_version-2015.props" />
     <Import Project="..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\collada-dom external imports.props" />
@@ -96,15 +126,21 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\build\vc14-1.4-d\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\build\vc14-1.4-d\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">..\..\build\vc14-1.4-d\obj\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|Win32'">..\..\build\vc14-1.4\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">..\..\build\vc14-1.4-d\obj\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|x64'">..\..\build\vc14-1.4\obj\$(ProjectName)\</IntDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\build\vc14-1.4-d\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\build\vc14-1.4-d\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">..\..\build\vc14-1.4-d\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|Win32'">..\..\build\vc14-1.4\</OutDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">..\..\build\vc14-1.4-d\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|x64'">..\..\build\vc14-1.4\</OutDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|x64'">false</LinkIncremental>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\build\vc14-1.4\obj\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\build\vc14-1.4\obj\$(ProjectName)\</IntDir>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\build\vc14-1.4\</OutDir>
@@ -114,7 +150,9 @@
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libcollada14dom22-d</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libcollada14dom22-d</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|Win32'">libcollada14dom22-d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|Win32'">libcollada14dom22</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">libcollada14dom22-d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|x64'">libcollada14dom22</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libcollada14dom22</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libcollada14dom22</TargetName>
   </PropertyGroup>
@@ -213,6 +251,40 @@
       <Command>..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\quasi_install.bat $(Platform) $(Configuration) $(TargetName) $(TargetDir) $(PlatformToolSet) collada-dom2.2 ..\..\include</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;DOM_DYNAMIC;DOM_EXPORT;DOM_INCLUDE_LIBXML;PCRE_STATIC;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libxml2_a.lib;zlib.lib;wsock32.lib;pcred.lib;pcrecppd.lib;minizip.lib;libboost_filesystem-d.lib;libboost_system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <OutputFile>$(OutDir)libcollada14dom22-d.dll</OutputFile>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SubSystem>NotSet</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\quasi_install.bat $(Platform) $(Configuration) $(TargetName) $(TargetDir) $(PlatformToolSet) collada-dom2.2 ..\..\include</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_UNCC_ZJW|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -229,7 +301,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;zlibd.lib;wsock32.lib;pcred.lib;pcrecppd.lib;minizipd.lib;boost_filesystem-$(BOOST_MSVC_STR)-mt-gd-1_63.lib;boost_system-$(BOOST_MSVC_STR)-mt-gd-1_63.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2d.lib;zlibd.lib;wsock32.lib;pcred.lib;pcrecppd.lib;minizipd.lib;boost_filesystem-$(BOOST_MSVC_STR)-mt-gd-1_63.lib;boost_system-$(BOOST_MSVC_STR)-mt-gd-1_63.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -238,6 +310,42 @@
       <LinkTimeCodeGeneration>
       </LinkTimeCodeGeneration>
       <OutputFile>$(OutDir)libcollada14dom22-d.dll</OutputFile>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>..\..\..\UNCC_ZJW\GumNTape_Build\collada-dom\v1\quasi_install.bat $(Platform) $(Configuration) $(TargetName) $(TargetDir) $(PlatformToolSet) collada-dom2.2 ..\..\include</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_UNCC_ZJW|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;DOM_DYNAMIC;DOM_EXPORT;DOM_INCLUDE_LIBXML;PCRE_STATIC;BOOST_ALL_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libxml2.lib;zlib.lib;wsock32.lib;pcre.lib;pcrecpp.lib;minizip.lib;boost_filesystem-$(BOOST_MSVC_STR)-mt-g-1_63.lib;boost_system-$(BOOST_MSVC_STR)-mt-g-1_63.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <OutputFile>$(OutDir)libcollada14dom22.dll</OutputFile>
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <SubSystem>NotSet</SubSystem>
