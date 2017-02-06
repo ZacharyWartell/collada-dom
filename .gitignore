@@ -1,6 +1,6 @@
 
 # MSVS
-**/vc1*-1.4/*.VC.db
-**/vc1*-1.4/*.sdf
-**/vc1*-1.4/*.suo
-**/vc1*-1.4/*.vcxproj.user
+**/vc1*-1.?/*.VC.db
+**/vc1*-1.?/*.sdf
+**/vc1*-1.?/*.suo
+**/vc1*-1.?/*.vcxproj.user
