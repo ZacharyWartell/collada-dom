@@ -4,3 +4,5 @@
 **/vc1*-1.?/*.sdf
 **/vc1*-1.?/*.suo
 **/vc1*-1.?/*.vcxproj.user
+**/vc1*-1.?/*.vs/
+**/dom/build/
